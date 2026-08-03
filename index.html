@@ -352,7 +352,6 @@ try {
         <div class="card"><div class="num">php.exception.uncaught</div><h3>\Error thật, không ai bắt</h3><p>KHÔNG phải throw new Exception cố ý — là \Error thật của PHP (TypeError...), lọt qua hết mọi catch(\Exception). Request DỪNG ở đây.</p></div>
         <div class="card"><div class="num">php.shutdown.fatal</div><h3>Chết hẳn</h3><p>Hết memory / quá giờ chạy — script chết ngay lúc đó, không handler nào kịp bắt. Duy nhất KHÔNG có response tử tế nào nữa.</p></div>
       </div>
-      <p class="reveal d4" style="margin-top:14px;">Muốn 1 exception cố ý (throw để điều khiển luồng, không phải bug) không bị tính vào <span class="mono">php.exception.caught</span>? Cho nó <span class="mono">implements SilentObservabilityException</span> — không cần đụng env hay config.</p>
     </section>
 
     <!-- 8. TÓM LẠI + so sánh -->
